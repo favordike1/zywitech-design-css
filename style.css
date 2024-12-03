@@ -80,7 +80,7 @@ header nav {
 
 #showcase {
     min-height: 300px;
-    background: url('../images/showcase.jpg');
+    background-image: url('/images/showcase.jpg');
     background-size: cover;
     background-position: center;
     text-align: center;
