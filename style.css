@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E5E3D4;
+    font: 16px/1.5, "Open Sans", sans-serif;
+}
+
+button {
+    padding: 10px;
+    border: 0;
+    background-color: #6A669D;
+    margin-left: 5px;
+    border-radius: 5%;
+    color: #E5E3D4;
+
+}
+
+button:hover {
+    font-weight: bold;
+    background-color: #1C325B;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background-color: #E5E3D4;
+    border-bottom: 5px solid #6A669D;
+    padding-top: 20px;
+    min-height: 70px;
+    color: #1C325B;
+    margin-bottom: 0;
+}
+
+header li {
+    float: left;
+    display: inline;
+    margin: 0 15px 0 15px;
+}
+
+header #logo {
+    float: left;
+    margin: 0;
+    
+}
+
+#logo h1 {
+    margin: 0;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header .highlight,
+header .active a {
+    color: rgb(172, 36, 36);
+    font-weight: bold;
+}
+
+header a {
+    text-decoration: none;
+    color: #1C325B;
+
+}
+
+header a:hover {
+    font-weight: bold;
+    color: #000;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+#showcase {
+    min-height: 300px;
+    background: url('../images/showcase.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 0 60px;
+    margin: 0;
+}
+
+#showcase h1 {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 0 20px;
+    
+
+}
+
+#newsletter {
+    padding: 20px;
+    border-bottom: 5px solid #6A669D;
+    color: #6A669D;
+    text-align: center;
+}
+
+#newsletter h2 {
+    float: left;
+    padding-left: 5px;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 18px;
+    margin-right: 100px;
+}
+
+#newsletter input[type=email] {
+    height: 35px;
+    border: 2px;
+    width: 200px;
+    padding: 0 10px;
+}
+
+#box {
+    text-align: center;
+    margin-top: 30px;
+    color: #6A669D;
+}
+
+#box h2 {
+    margin: 0 0 30px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.boxes {
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.boxes img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #1C325B;
+    color: #6A669D;
+}
+
+/* About page */
+
+#about {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom: 5px solid #6A669D;
+    color: #1C325B
+
+}
+
+#about p {
+    width: 90%;
+    padding-left: 10px;
+    text-align: center;
+}
+
+#about img {
+    height: 200px;
+    width: 500px;
+}
+
+#about .left-box {
+    float: left;
+    text-align: center;
+    width: 50%;
+    border: 2px dotted #6A669D;
+    box-sizing: border-box;
+    
+}
+
+
+
+.clear {
+    clear: both;
+}
+
+ 
+/*services*/
+#services {
+    text-align: center;
+    
+}
+
+#Services ul li {
+    list-style: none;
+}
+
+#Services ul {
+    text-align: center;
+    color: #1C325B;
+}
+.services_1 {
+    width: 50%;
+    float: left;
+}
+
+.service_list {
+    border: 1px solid #6A669D;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#contact_form {
+    color: #1C325B;
+    background-color: #9ABF80;
+    width: 45%;
+    float: right;
+    margin-top: 70px;
+    border-radius: 4%;
+    margin-right: 10px;
+}
+
+#contact_form h3 {
+    text-align: center;
+}
+
+.contact input, label, textarea {
+    display: block;
+    width: 90%;
+    margin: 10px 0;
+    height: 25px;
+    
+}
+
+.contact {
+    padding: 20px;
+}
+
+#textarea {
+    min-height: 50px;
+    resize: vertical;
+}
+
+
+@media(max-width: 768px){
+    header li, #newsletter form, #newsletter h2, header #logo, #about .left-box, .services_1, #contact_form, header nav, .boxes {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+     #showcase h1 {
+            font-size: 1.5rem;
+    }
+  #showcase {
+             min-height: 200px;
+                    background: url('../images/showcase.jpg');
+                    background-size: cover;
+                    background-position: center;
+                    text-align: center;
+                    padding-top: 30px;
+                    
+    }
+    #newsletter input[type=email]{
+        width: 90%;
+        }
+    button {
+        width: 90%;
+        margin: 10px 0;
+    }
+    #contact_form {
+        margin-top: 20px;
+    }
+    .services_1 {
+        width: 100%;
+    }
+    label {
+        text-align: start;
+    }
+    .right-box, footer {
+           width: 100%;
+}
+#newsletter  {
+    width: 100%;
+}
+
+#newsletter h2 form  {
+    margin-right: 40px;
+}
+h2, #box > h2 {
+    font-size: 1.3rem;
+}
+#logo h1 {
+    font-size: 1.4rem;
+}
+}
